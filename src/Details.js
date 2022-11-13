@@ -16,11 +16,11 @@ function Details() {
 	}, []);
 
 	return (
-		<div style={{ display: 'flex', width: '80vw', marginTop: 24, alignItems:'center'}}>
+		<div style={{ display: 'flex', marginTop: '24px', justifyContent:'center'}}>
 			{movie && (
-				<div style={{ display: 'flex', alignItems:'center', flexDirection:'column', color:'orange'}}>
-					<img src={movie.Poster} style={{ width: 300, height: 300}} />
-					<div>
+				<div style={{ display: 'flex', alignItems:'center', flexDirection:'column', color:'black'}}>
+					<img src={movie.Poster} style={{ width: 400, height: 400}} />
+					<div style={{width:'75%'}}>
 						<h1>{movie.Title}</h1>
 						<span>
 							<strong>Anno di uscita: </strong> {movie.Released}
@@ -46,7 +46,7 @@ function Details() {
 							{movie.Ratings[0].Value}
 						</span>
 					</div>
-                    <button style={{cursor:'pointer', backgroundColor:'transparent', marginTop:'10px', borderBlockColor:'orange', color:'orange'}} onClick={() => navigate('/')}>Home</button>
+                    <button style={{cursor:'pointer', backgroundColor:'transparent', marginTop:'10px'}} onClick={() => navigate('/')}>Home</button>
 				</div>
 			)}
 		</div>

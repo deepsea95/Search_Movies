@@ -15,7 +15,7 @@ function List() {
 		<div>
 			<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 				<input
-					style={{ marginBottom: '10px', outline:'none', width:'200px', height:'20px', color:'darkblue', backgroundColor:'orange'}}
+					style={{ margin: '15px', outline:'none', width:'200px', height:'20px', backgroundColor:'transparent', color:'black'}}
 					type="text"
 					placeholder="Cerca"
 					value={searchInput}
@@ -26,8 +26,6 @@ function List() {
 						marginBottom: '20px',
 						backgroundColor: 'transparent',
 						cursor: 'pointer',
-						borderColor: 'orange',
-						color: 'orange'
 					}}
 					onClick={search}
 				>

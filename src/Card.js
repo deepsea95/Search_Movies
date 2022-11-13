@@ -14,7 +14,7 @@ function Card(props) {
 				})}
 		>
 			<img src={props.movie.Poster} style={{padding: '15px'}} />
-			<div style={{ color: 'orange'}}>
+			<div style={{ color: 'black'}}>
 				<h1>{props.movie.Title}</h1>
 				<p>Anno di uscita: {props.movie.Year}</p>
 			</div>
